@@ -1,12 +1,14 @@
-# Mini Projeto de E-Commerce
+npm install -D @types/prompt-sync
+
+,,# Mini Projeto de E-Commerce
 
 ## Informações do projeto
 
-| Informação | Detalhes |
-| --- | --- |
-| Estudante e turma | Antonio Eduardo da Costa - Turma 6 |
-| Objetivo | Gerenciar produtos, clientes, carrinhos, pedidos e relatórios de vendas |
-| Tecnologias | TypeScript e Node.js |
+| Informação      | Detalhes                                                                 |
+| ----------------- | ------------------------------------------------------------------------ |
+| Estudante e turma | Antonio Eduardo da Costa - Turma 6                                       |
+| Objetivo          | Gerenciar produtos, clientes, carrinhos, pedidos e relatórios de vendas |
+| Tecnologias       | TypeScript e Node.js                                                     |
 
 ## Funcionalidades
 
@@ -39,6 +41,7 @@ src/
 Siga o passo a passo abaixo para configurar e executar a aplicação em sua máquina.
 
 ### 1. Inicializar o NPM
+
 Caso ainda não tenha iniciado o gerenciador de pacotes no projeto, certifique-se de iniciar o NPM executando:
 
 ```bash
@@ -46,6 +49,7 @@ npm init -y
 ```
 
 ### 2. Instalar as Dependências
+
 Instale (ou certifique-se de ter instalado) as seguintes bibliotecas principais do projeto:
 
 * **typescript**: Compilador da linguagem TypeScript.
@@ -56,6 +60,7 @@ npm install typescript prompt-sync
 ```
 
 ### 3. Instalar as Tipagens (Desenvolvimento)
+
 Instale a biblioteca de tipos para que o `prompt-sync` funcione corretamente e sem erros de compilação com o TypeScript:
 
 ```bash
@@ -63,6 +68,7 @@ npm install -D @types/prompt-sync
 ```
 
 ### 4. Executar a Aplicação
+
 Para rodar o projeto diretamente sem precisar compilar manualmente os arquivos TypeScript, utilize o comando:
 
 ```bash
@@ -70,15 +76,6 @@ npx tsx ./src/main.ts
 ```
 
 > 💡 **Nota:** Na primeira execução, o terminal pode perguntar se você deseja instalar temporariamente o pacote `tsx` (`Ok to proceed? (y)`). Basta pressionar **Enter** para aceitar e o programa iniciará em seguida.
-
-
-Na pasta do projeto, depois de instala as dependências, execute:
-
-```bash
-npm install
-npm run build
-npm start
-```
 
 ## Regras de negócio
 
