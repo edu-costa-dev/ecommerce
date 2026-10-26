@@ -1,5 +1,7 @@
 # Mini Projeto de E-Commerce
 
+## Informações do projeto
+
 | Informação | Detalhes |
 | --- | --- |
 | Estudante e turma | Antonio Eduardo da Costa - Turma 6 |
@@ -12,10 +14,10 @@
 - Cadastro e consulta de clientes, com três clientes de exemplo carregados no início.
 - Carrinhos separados por cliente, com inclusão, remoção, alteração de quantidade e cálculo de subtotais e total.
 - Finalização de pedidos, registro do preço praticado, atualização do estoque e consulta de pedidos.
-- Relatórios gerais e individuais de quantidade de pedidos, unidades vendidas e total vendido.
+- Relatórios de quantidade de pedidos, unidades vendidas e total vendido. O módulo permite consultar um resumo por cliente; no menu, estão disponíveis relatórios gerais, por categoria e por produto.
 - Menu interativo no terminal com operações de clientes, produtos, carrinhos, pedidos, estoque e relatórios.
 
-## Estrutura
+## Estrutura do projeto
 
 ```text
 src/
@@ -28,19 +30,34 @@ src/
   main.ts        Demonstração das funcionalidades
 ```
 
-## Como compilar e executar
+## Instalação e execução
 
-Requisitos: Node.js e npm instalados.
+### Requisitos e dependências
 
-Na pasta do projeto, instale as dependências e execute:
+Para executar o projeto, tenha certeza de iniciado o NPM:
+```
+npm init -y
+```
+
+Em seguida, instale (ou certifique-se de ter instalado) as seguintes bibliotecas:
+* typescript
+* prompt-sync
+```
+npm install typescript prompt-sync
+```
+
+Instale a biblioteca para que o **prompt-sync** funcione com o TypeScript:
+```
+npm install -D @types/prompt-sync
+```
+
+Na pasta do projeto, depois de instala as dependências, execute:
 
 ```bash
 npm install
 npm run build
 npm start
 ```
-
-O menu permite cadastrar e consultar clientes e produtos, criar/consultar e editar carrinhos por ID ou nome do cliente, revisar os valores antes de finalizar pedidos, atualizar e consultar estoque e gerar relatórios gerais, por categoria ou por produto. Os dados ficam em memória e são reiniciados a cada execução.
 
 ## Regras de negócio
 
@@ -51,9 +68,11 @@ O menu permite cadastrar e consultar clientes e produtos, criar/consultar e edit
 - Um pedido exige cliente cadastrado e carrinho com itens. O estoque é conferido antes da finalização e descontado somente quando o pedido é criado.
 - O pedido guarda o nome e o preço unitário registrados na compra, sem ser afetado por alterações futuras no catálogo.
 
-## Exemplos
+## Uso do menu
 
 O menu principal oferece: 1) Clientes, 2) Produtos, 3) Pedidos, 4) Carrinho, 5) Estoque e 6) Relatórios de vendas. Cada seção apresenta suas operações disponíveis.
+
+O menu permite cadastrar e consultar clientes e produtos, criar/consultar e editar carrinhos por ID ou nome do cliente, revisar os valores antes de finalizar pedidos, atualizar e consultar estoque e gerar relatórios gerais, por categoria ou por produto. Os dados ficam em memória e são reiniciados a cada execução.
 
 ## Limitações
 
