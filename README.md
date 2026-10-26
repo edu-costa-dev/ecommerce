@@ -34,22 +34,43 @@ src/
 
 ### Requisitos e dependências
 
-Para executar o projeto, tenha certeza de iniciado o NPM:
-```
+## 🚀 Como Executar o Projeto
+
+Siga o passo a passo abaixo para configurar e executar a aplicação em sua máquina.
+
+### 1. Inicializar o NPM
+Caso ainda não tenha iniciado o gerenciador de pacotes no projeto, certifique-se de iniciar o NPM executando:
+
+```bash
 npm init -y
 ```
 
-Em seguida, instale (ou certifique-se de ter instalado) as seguintes bibliotecas:
-* typescript
-* prompt-sync
-```
+### 2. Instalar as Dependências
+Instale (ou certifique-se de ter instalado) as seguintes bibliotecas principais do projeto:
+
+* **typescript**: Compilador da linguagem TypeScript.
+* **prompt-sync**: Biblioteca para capturar entradas de texto no terminal.
+
+```bash
 npm install typescript prompt-sync
 ```
 
-Instale a biblioteca para que o **prompt-sync** funcione com o TypeScript:
-```
+### 3. Instalar as Tipagens (Desenvolvimento)
+Instale a biblioteca de tipos para que o `prompt-sync` funcione corretamente e sem erros de compilação com o TypeScript:
+
+```bash
 npm install -D @types/prompt-sync
 ```
+
+### 4. Executar a Aplicação
+Para rodar o projeto diretamente sem precisar compilar manualmente os arquivos TypeScript, utilize o comando:
+
+```bash
+npx tsx ./src/main.ts
+```
+
+> 💡 **Nota:** Na primeira execução, o terminal pode perguntar se você deseja instalar temporariamente o pacote `tsx` (`Ok to proceed? (y)`). Basta pressionar **Enter** para aceitar e o programa iniciará em seguida.
+
 
 Na pasta do projeto, depois de instala as dependências, execute:
 
