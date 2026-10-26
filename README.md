@@ -1,6 +1,3 @@
-npm install -D @types/prompt-sync
-
-,,# Mini Projeto de E-Commerce
 
 ## Informações do projeto
 
